@@ -79,7 +79,7 @@ jobs:
       - id: pr
         name: Creating pull request...
         uses: repo-sync/pull-request@v2
-        if: ${{ steps.sync.outputs.new_branch }}
+        if: ${{ steps.sync.outputs.new_branch }} 
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           source_branch: ${{ steps.sync.outputs.new_branch }}
