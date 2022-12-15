@@ -75,7 +75,7 @@ jobs:
         if: ${{ steps.build.outputs.publish_dir }}
         with:
           branch: gh-pages
-          folder: ${{ steps.build.outputs.publish_dir }}
+          folder: ${{ steps.build.outputs.publish_dir }} 
       - id: pr
         name: Creating pull request...
         uses: repo-sync/pull-request@v2
