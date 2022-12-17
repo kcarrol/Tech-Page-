@@ -52,7 +52,7 @@ jobs:
         uses: plasmicapp/plasmic-action@master
         with:
           run: sync
-          github_token: ${{ secrets.GITHUB_TOKEN }}
+          github_token: ${{ secrets.GITHUB_TOKEN }} 
           branch: ${{ github.event.client_payload.data.branch }}
           directory: ${{ github.event.client_payload.data.directory }}
           project_id: ${{ github.event.client_payload.data.projectId }}
